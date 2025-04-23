@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+p {
+text-align: left;
+font-size: 64px;
+margin-top:0px;
+color: mintcream;
+border: 10px;
+-webkit-text-stroke: 1px;
+-webkit-text-stroke-color: crimson;
+}
+p1 {
+  text-align: center;
+  font-size: 40px;
+  margin-top: 0px;
+  color: mintcream;
+  -webkit-text-stroke: 0.7px;
+  -webkit-text-stroke-color: crimson;
+}
+
+
+
+</style>
+</head>
+<body> 
+  <style>
+    body {
+      background-image: url('https://a.travel-assets.com/findyours-php/viewfinder/images/res70/37000/37859-Riga.jpg');
+      background-position: top;
+      background-size: cover;
+      height: 200px;
+    }
+    </style>
+  <img src = "https://upload.wikimedia.org/wikipedia/commons/c/c5/Animated-Flag-Latvia.gif"/>
+
+  <p id="Title"></p>
+<p1 id="Counts"></p1>
+
+<script>
+var countDownDate = new Date("Nov 18, 1918 0:00:00").getTime();
+
+var Nu = Math.random(1,100);
+
+var x = setInterval(function() {
+
+  var now = new Date().getTime();
+    
+  var distance = now - countDownDate;
+    
+  var years = Math.floor(distance / (1000 * 60 * 60 * 24 * 365));
+ var days = Math.floor(distance % (1000 * 60 * 60 * 24 * 365) / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  document.getElementById("Title").innerHTML = "Latvija - laiks pēc valsts dzimšanas.";  
+  
+  document.getElementById("Counts").innerHTML = "Apmēram - " + years + "y " + days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+}, 1000);
+
+ Nu = 1 (function(){
+
+
+})
+</script>
+
+</body>
+</html>
